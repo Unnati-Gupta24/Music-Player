@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        MUSIC PLAYER
+    </title>
+    <link rel="stylesheet" href="musi.css">
+    <script src="jk.js"></script>
+    <script src="https://kit.fontawesome.com/befd13cd4f.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.22.0/mediaelement-and-player.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="lefthead">
+            <div class="ig"></div>
+            <div class="hr">Ninja<br> Studio</div>
+            <div class="h">Favourites</div>
+            </div>
+            <div class="righthead">
+            <div class="searchbar">
+            <input type="text" placeholder="Search....." class="inp">
+            <a href="https://g.co/kgs/mWRpJit"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="jt"><i class="fa-solid fa-bell"></i></div>
+            <div class="dp"></div>
+            </div>
+        </div>
+    </header>
+    <aside class="pg">
+        <div class="asi">
+        <div class="to">
+          <div class="gi">Queue</div>
+            <div class="ji">
+                <select name="Songs" class="ka">
+                    <option value="volvo" class="kaj">Editor's choice</option>
+                    <option value="saab" class="kaj">1. Attention</option>
+                    <option value="opel" class="kaj">2. Starboy</option>
+                    <option value="audi" class="kaj">3. Stiches</option>
+                    <option value="saab" class="kaj">4. Courtesy call</option>
+                    <option value="opel" class="kaj">5. Stay</option>
+                    <option value="audi" class="kaj">6. Shameless</option>
+                  </select>
+            </div>
+        </div>
+        <div class="dc">
+           <div class="bi">
+            <div class="lhs">
+            <div class="nos">01</div>
+            <div class="pic1"></div>
+            <div class="sname">Starboy</div>
+            <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+            </div>
+           </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">02</div>
+                <div class="pic2"></div>
+                <div class="sname">Tum Hi Ho</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">03</div>
+                <div class="pic3"></div>
+                <div class="sname">Attention</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">04</div>
+                <div class="pic4"></div>
+                <div class="sname">Baby</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">05</div>
+                <div class="pic5"></div>
+                <div class="sname">Hasi</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div> 
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">06</div>
+                <div class="pic6"></div>
+                <div class="sname">Senorita</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">07</div>
+                <div class="pic7"></div>
+                <div class="sname">Coca Cola</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">08</div>
+                <div class="pic8"></div>
+                <div class="sname">Racing in night</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div> 
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">09</div>
+                <div class="pic9"></div>
+                <div class="sname">Stiches</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">10</div>
+                <div class="pic10"></div>
+                <div class="sname">Courtesy call</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">11</div>
+                <div class="pic11"></div>
+                <div class="sname">Lovely</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div> 
+          <div class="bi">
+            <div class="lhs">
+                <div class="nos">12</div>
+                <div class="pic12"></div>
+                <div class="sname">Stay</div>
+                <div class="rhs"><i class="fa-regular fa-heart"></i></div>
+                </div>
+          </div>
+        </div>
+    </aside>
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <div class="wrapper-holder">
+                  <div id="slider-img-1"></div>
+                  <div id="slider-img-2"></div>
+                  <div id="slider-img-3"></div>
+                  <div id="slider-img-4"></div>
+                </div>
+            </div>
+            <div class="button-holder">
+                <a href="#slider-img-1" class="button"></a>
+                <a href="#slider-img-2" class="button"></a>
+                <a href="#slider-img-3" class="button"></a>
+                <a href="#slider-img-4" class="button"></a>
+            </div>
+        </div>
+    </section>
+
+<section>
+    <div class="jku">Latest releases</div>
+        <div class="sec1">
+         <div class="viu">
+            <div class="lhs1">
+                <div class="pie1"></div>
+                <div class="sname1">Attention</div>
+                <div class="rhs1"><i class="fa-solid fa-circle-info"></i></div>
+                </div>
+          </div>
+         <div class="viu">
+            <div class="lhs1">
+                <div class="pie2"></div>
+                <div class="sname1">Lovely</div>
+                <div class="rhs1"><i class="fa-solid fa-circle-info"></i></div>
+                </div>
+        </div> 
+        </div>
+        <div class="sec2">
+         <div class="viu">
+            <div class="lhs1">
+                <div class="pie3"></div>
+                <div class="sname1">Courtesy</div>
+                <div class="rhs1"><i class="fa-solid fa-circle-info"></i></div>
+                </div>
+          </div>
+         <div class="viu">
+            <div class="lhs1">
+                <div class="pie4"></div>
+                <div class="sname1">Stay</div>
+                <div class="rhs1"><i class="fa-solid fa-circle-info"></i></div>
+                </div>
+         </div>
+        </div>
+</section>
+
+<section>
+    <div class="jku">Popular Artist</div>
+    <div class="leo">
+        <div class="bui">
+            <div class="biu i1"></div>
+            <div class="vi">Justin beiber</div>
+        </div>
+        <div class="bui">
+            <div class="biu i2"></div>
+            <div class="vi">Selena Gomez</div>
+        </div>
+        <div class="bui">
+            <div class="biu i3"></div>
+            <div class="vi">Harry Styles</div>
+        </div>
+        <div class="bui">
+            <div class="biu i4"></div>
+            <div class="vi">Charlie Puth</div>
+        </div>
+        <div class="bui">
+            <div class="biu i5"></div>
+            <div class="vi">Taylor Swift</div>
+        </div>
+        <div class="bui">
+            <div class="biu i6"></div>
+            <div class="vi">Billie Eilish</div>
+        </div>
+        <div class="bui">
+            <div class="biu i7"></div>
+            <div class="vi">Maroon 5</div>
+        </div>
+        <div class="bui">
+            <div class="biu i8"></div>
+            <div class="vi">One Direction</div>
+        </div>
+        <div class="bui">
+            <div class="biu i9"></div>
+            <div class="vi">Beyonce</div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="lro">
+        <div class="vg v1">Love</div>
+        <div class="vg v2">Retro</div>
+        <div class="vg v3">Rock</div>
+        <div class="vg v4">Workout</div>
+        <div class="vg v5">Pop</div>
+        <div class="vg v6">Chill</div>
+        <div class="vg v7">Dance</div>
+        <div class="vg v8">Classic</div>
+        <div class="vg v9">Jazz</div>
+        <div class="vg v0">Salsa</div>
+    </div>
+</section>
+<section>
+    <div class="hg">
+        <div class="lk l1">Party</div>
+        <div class="lk l2">Electronic</div>
+        <div class="lk l3">Road trip</div>
+        <div class="lk l4">Vacation</div>
+        <div class="lk l5">Lofi</div>
+        <div class="lk l6">Campfire</div>
+        <div class="lk l7">New Year</div>
+        <div class="lk l8">Festival</div>
+        <div class="lk l9">Road trip</div> 
+    </div>
+</section>
+<section>
+    <div class="jku">Latest English</div>
+        <div class="sc">
+         <div class="vih">
+             <div class="viuk k1"></div>
+             <div class="vuk">Starboy</div>
+             <div class="vuk">The Weekend</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k2"></div>
+             <div class="vuk">Attention</div>
+             <div class="vuk">Charlie Puth</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k3"></div>
+             <div class="vuk">Baby</div>
+             <div class="vuk">Justin Beiber</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k4"></div>
+             <div class="vuk">Senorita</div>
+             <div class="vuk">Shawn Mendes</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k5"></div>
+             <div class="vuk">Racing night</div>
+             <div class="vuk">Yoasobi</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k6"></div>
+             <div class="vuk">Stiches</div>
+             <div class="vuk">Shawn Mendes</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k7"></div>
+             <div class="vuk">Courtesy Call</div>
+             <div class="vuk"></div>
+         </div>
+         <div class="vih">
+            <div class="viuk k8"></div>
+             <div class="vuk">Lovely</div>
+             <div class="vuk">Billie Eilish</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k9"></div>
+             <div class="vuk">Stay</div>
+             <div class="vuk">Justin beiber</div>
+         </div>
+         <div class="vih">
+            <div class="viuk k0"></div>
+             <div class="vuk">Shameless</div>
+             <div class="vuk">Camilla</div>
+         </div>
+        </div>
+</section>
+<section>
+    <div class="jku">Latest Hindi</div>
+        <div class="sc">
+         <div class="vih">
+             <div class="viuk r1"></div>
+             <div class="vuk">Tum hi ho</div>
+             <div class="vuk">Arjit Singh</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r2"></div>
+             <div class="vuk">Khaab</div>
+             <div class="vuk">Akhil</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r3"></div>
+             <div class="vuk">Mahi</div>
+             <div class="vuk">Sharib</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r4"></div>
+             <div class="vuk">Sun zara</div>
+             <div class="vuk">Ashutosh</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r5"></div>
+             <div class="vuk">Coca cola</div>
+             <div class="vuk">Suno nigam</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r6"></div>
+             <div class="vuk">Hasi</div>
+             <div class="vuk">Shreya ghoshal</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r7"></div>
+             <div class="vuk">Tum hi aana</div>
+             <div class="vuk">Arjit Singh</div>
+         </div>
+         <div class="vih">
+            <div class="viuk r0"></div>
+             <div class="vuk">Duniya</div>
+             <div class="vuk">Preetam</div>
+         </div>
+        </div>
+</section>
+<section>
+    <div class="jku">Latest Punjabi</div>
+        <div class="scm">
+         <div class="vih">
+             <div class="viuk n1"></div>
+             <div class="vuk">Cindrella</div>
+             <div class="vuk">Hardy Sandhu</div>
+         </div>
+         <div class="vih">
+            <div class="viuk n2"></div>
+             <div class="vuk">Love Dose</div>
+             <div class="vuk">Honey Singh</div>
+         </div>
+         <div class="vih">
+            <div class="viuk n3"></div>
+             <div class="vuk">Amplifier</div>
+             <div class="vuk">Imran Khan</div>
+         </div>
+         <div class="vih">
+            <div class="viuk n4"></div>
+             <div class="vuk">Satisfya</div>
+             <div class="vuk">Imran Khan</div>
+         </div>
+         <div class="vih">
+            <div class="viuk n5"></div>
+             <div class="vuk">Backbone</div>
+             <div class="vuk">Hardy Sandhu</div>
+         </div>
+         <div class="vih">
+            <div class="viuk n6"></div>
+             <div class="vuk">Nikle current</div>
+             <div class="vuk">Mankrit aulakh</div>
+         </div>
+        </div>
+</section>
+<footer>
+    <div class="jf">
+        <div class="pl">
+        <div class="pl1"></div>
+        <div class="pl2"></div>
+        <div class="pl3"></div>
+        </div>
+        <div class="as">
+        <audio class="audio" controls="controls">
+            <source type="audio/mpeg" src="http://media.blubrry.com/codepen_radio/p/codepen-podcast.s3.amazonaws.com/100.mp3?_=1">
+        </audio>
+        </div>
+        <div class="kiop">
+
+        </div>
+    </div>
+</footer>
+</body>
+</html>
