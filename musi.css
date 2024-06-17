@@ -1,0 +1,970 @@
+body{
+    background-color: rgb(32, 11, 52);
+}
+.head{
+    background-color: rgb(7, 9, 37);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 12vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 4px 4px 8px rgb(5, 2, 10);
+}
+@media only screen and (max-width:600px) {
+    .pg{
+        display:none;
+    }
+    .head .h{
+        display: none;
+    }
+    .head .righthead{
+    margin-left: -20px;
+    }
+    .head .searchbar input{
+       width: 100px;
+    }
+}
+.lefthead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:aliceblue;
+    margin: 10px;
+    margin-left: 10vw;
+}
+.hr{
+    text-align: center;
+    font-weight: bold;
+    font-family: arial;
+    font-size: large;
+    margin-right: 50px;
+    margin-left: 10px;
+    text-shadow: 2px 2px rgb(54, 54, 54);
+}
+.h{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: arial;
+    font-size: medium;
+    text-shadow: 1px 1px rgb(69, 68, 68);
+}
+.ig{
+    height: 40px;
+    width: 50px;
+    margin-left: -5px;
+    box-shadow: -2px -2px 4px rgb(32, 18, 32), 2px 2px 4px rgb(31, 19, 49);
+    margin-right: 25px;
+    background-image: url('logo.jpg');
+    background-size: contain;
+    border:2px solid rgb(36, 24, 56);
+}
+.righthead{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-right: 10vw;
+}
+.searchbar{
+    margin-top: 4px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    border: 2px solid rgb(104, 104, 112);
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgb(77, 76, 76);
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: rgb(247, 247, 250);
+}
+.searchbar:hover input{
+width: 300px;
+}
+.inp{
+    width: 0;
+    font-family: cursive;
+    color: rgb(6, 6, 6);
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: 1s;
+    font-weight: bold;
+}
+.searchbar a .fas{
+    color: rgb(2, 2, 2);
+    font-size: 18px;
+    margin-right: 1px;
+}
+.dp{
+    height: 40px;
+    width: 50px;
+    background-image: url('ih.jpeg');
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    box-shadow: 0 0 5px aqua;
+    border: 2px solid aqua;
+    cursor: pointer;
+    margin-top: 3px;
+}
+.asi{
+    margin-left: 60vw;
+    height: 830px;
+    margin-top: 12vh;
+    margin-right: 20vw;
+    width: 400px;
+    background-color: rgb(34, 24, 61);
+    box-shadow: -4px -4px 8px rgb(22, 10, 27), 4px 4px 8px rgb(11, 2, 14);
+    display: flex;
+    flex-direction: column;
+}
+.to{
+    display: flex;
+    flex-direction: row;
+}
+.gi{
+    color: white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: arial;
+}
+.ji{
+    float: right;
+    margin-left: 165px;
+    color: white;
+    margin-top: 22px;
+}
+.kaj{
+    color: black;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ka{
+    background-color: transparent;
+    border: none;
+    color: aquamarine;
+    font-weight: 600;
+    cursor: pointer;
+}
+.bi{
+    height: 60px;
+    width: 280px;
+    box-shadow: 1px 1px 2px rgb(1, 1, 37);
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.container{
+    position:relative;
+}
+.container .wrapper{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+    height: 60vh;
+    width: 50vw;
+    background-color: bisque;
+    top: 15vh;
+    left: 5vw;
+    margin-top: -130vh;
+    margin-left: 5vw;
+    overflow: hidden;
+}
+@media only screen and (max-width:600px){
+    .container{
+        margin-top: 150vh;
+    }
+    .container .wrapper{
+        width: 90%;
+        height: 40vh;
+    }
+    .container .button-holder{
+        margin-left: 60px;
+    }
+}
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    height: 100%;
+    width:100%;  
+    animation: slider 30s ease-in-out infinite alternate;
+}
+.container #slider-img-1{
+    background-image: url('ig1.jpg');
+    background-position: center; 
+    background-size: contain;
+}
+.container #slider-img-2{
+    background-image: url('ig2.jpg');
+    background-position: center; 
+    background-size: contain;
+}
+.container #slider-img-3{
+    background-image: url('ig3.jpg');
+    background-position: center;
+    background-size: contain; 
+}
+.container #slider-img-4{
+    background-image: url('ig4.jpg');
+    background-position: center; 
+    background-size: contain;
+}
+.container .button-holder .button{
+    background-color: aliceblue;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+.container .button-holder{
+    position: absolute;
+    left: 27%;
+    bottom: 0%;
+}
+.button:hover{
+    box-shadow: 0px 0px 7px 4px rgba(2, 183, 254, 0.963);
+}
+@keyframes slider{
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-100%);}
+    30%{transform: translateX(-200%);}
+    40%{transform: translateX(-200%);}
+    50%{transform: translateX(-200%);}
+    60%{transform: translateX(-300%);}
+    70%{transform: translateX(-300%);}
+    80%{transform: translateX(-300%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+.jku{
+    color: white;
+    font-family: arial;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 7vh;
+    margin-left: 6vw;
+}
+@media all and (max-width:600px){
+    .jku{
+        margin-left: 50px;
+    }
+    .leo{
+        min-width: 85vw;
+        margin-left: 150px;
+    }
+    .lro{
+        min-width: 86vw;
+        box-shadow: 4px 4px 8px black,-4px -4px 8px black;
+        margin-top: -200px;
+    }
+    .lro .vg{
+        margin-left: 25px;
+    }
+    .hg{
+        margin-top: 100px;
+        min-width: 86vw; 
+    }
+    .hg .lk{
+        margin-left: 10px;
+    }
+    .sc{
+        min-width: 85vw; 
+    }
+    .scm{
+        min-width: 85vw;
+    }
+}
+.sec1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+    width:800px;
+    margin-top: 20px;
+    margin-bottom: -50px;
+}
+@media all and(max-width:600px) {
+    .sec1{
+        display: flex;
+        flex-direction: column;
+    }
+    .sec2{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.sec2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 150px;
+    width:800px;
+    margin-bottom: -50px;
+}
+.viu{
+    height: 100px;
+    width: 300px;
+}
+.leo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    width: 48vw;
+    margin-left: 4vw;
+    overflow-x: auto;
+    margin-bottom: -2vh;
+}
+.leo::-webkit-scrollbar{
+    width: 0;
+}
+.biu{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px black;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+.biu:hover{
+    box-shadow: 4px 4px 8px aqua, -3px -3px 6px aqua; 
+}
+.vi{
+    text-align: center;
+    color: white;
+    margin-top: 1vh;
+    font-weight: 300;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+.dc{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 132vh;
+}
+.dc::-webkit-scrollbar{
+    width:0;
+}
+.bi{
+    min-height: 65px;
+    border-radius: 2px;
+}
+.lro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    width: 57vw;
+    margin-left: 4vw;
+    background-color: rgb(29, 23, 52);
+    height: 150px;
+    box-shadow: 2px 2px 6px black;
+    overflow-x: auto;
+}
+.lro::-webkit-scrollbar{
+    width: 0;
+}
+.vg{
+    height: 110px;
+    min-width: 110px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px black;
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 110px;
+    opacity: 0.8;
+}
+.hg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+    overflow-x: auto;
+    width: 58vw;
+    margin-left: 4vw;
+    height: 200px;
+}
+.hg::-webkit-scrollbar{
+    width: 0;
+}
+.lk{
+    margin-top: 25px;
+    height:150px;
+    min-width: 220px;
+    box-shadow: -4px -4px 6px black;
+    color: white;
+    font-weight: 300;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    font-weight: 600;
+    text-shadow: 4px 4px 10px rgb(5, 5, 5);
+}
+.lk:hover{
+    text-shadow: 2px 2px 8px rgb(255, 4, 4),-2px -2px 8px blue;
+    box-shadow: 4px 4px 8px aqua;
+}
+.sc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2vh;
+    overflow: hidden;
+    width: 57vw;
+    margin-left: 4vw;
+    height: 180px;
+    overflow-x: auto;
+    margin-bottom: -5vh;
+
+}
+.sc::-webkit-scrollbar{
+    width: 0;
+}
+.scm::-webkit-scrollbar{
+    width: 0;
+}
+.vih{
+    margin-left: 20px;
+}
+.scm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3vh;
+    overflow: hidden;
+    width: 57vw;
+    margin-left: 4vw;
+    height: 180px;
+    margin-bottom: 10vh;
+    overflow-x: auto;
+}
+.viuk{
+    width: 100px;
+    height: 100px;
+}
+.vuk{
+    color: white;
+    height: 20px;
+}
+.jf{
+    bottom: 0;
+    left: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    position: fixed;
+    box-shadow: -2px -2px 8px rgb(29, 27, 27);
+}
+.v1{
+    background-image: url('love.jpg');
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.v2{
+    background-image: url('retro.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+
+.v3{
+    background-image: url('rock.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.v4{
+    background-image: url('workout.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.v5{
+    background-image: url('pop.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.v6{
+    background-image: url('chill.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.v7{
+    background-image: url('dance.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.v8{
+    background-image: url('classic.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.v9{
+    background-image: url('jazz.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.v0{
+    background-image: url('salsa.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i1{
+    background-image: url('justin.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.i2{
+    background-image: url('selena.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i3{
+    background-image: url('harry.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i4{
+    background-image: url('charlie.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i5{
+    background-image: url('taylor.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i6{
+    background-image: url('bill.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i7{
+    background-image: url('m5.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i8{
+    background-image: url('one.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.i9{
+    background-image: url('bey.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.l1{
+    background-image: url('prty.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l2{
+    background-image: url('elec.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l3{
+    background-image: url('rd.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l4{
+    background-image: url('cp.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l5{
+    background-image: url('lofi.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l6{
+    background-image: url('cfg.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l7{
+        background-image: url('conc.jpg');
+        background-position: center;
+        background-size: fill;cursor: pointer;
+}
+.l8{
+    background-image: url('fest.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.l9{
+    background-image: url('rd.jpg');
+    background-position: center;
+    background-size: fill;cursor: pointer;
+}
+.k1{
+    background-image: url('strboy.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k2{
+    background-image: url('attn.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k3{
+    background-image: url('baby.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k4{
+    background-image: url('sn.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k5{
+    background-image: url('rn.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k6{
+    background-image: url('stc.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k7{
+    background-image: url('cc.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k8{
+    background-image: url('lvly.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k9{
+    background-image: url('stay.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.k0{
+    background-image: url('sm.jpg');
+    background-position: center;
+    background-size: contain; cursor: pointer;
+}
+.r1{
+    background-image: url('tmh.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r2{
+    background-image: url('khaab.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r3{
+    background-image: url('mahi.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r4{
+    background-image: url('sz.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r5{
+    background-image: url('dun.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r6{
+    background-image: url('hasi.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r7{
+    background-image: url('tmh.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.r0{
+    background-image: url('ji.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.n1{
+    background-image: url('cin.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.n2{
+    background-image: url('ld.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.n3{
+    background-image: url('amp.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.n4{
+    background-image: url('sty.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.n5{
+    background-image: url('bb.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+}
+.n6{
+    background-image: url('cin.jpg');
+    background-position: center;cursor: pointer;
+    background-size: contain;
+}
+.lhs{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 52px;
+    margin-top: 7px;
+    margin-left: 4px;
+}
+.nos{
+    font-weight: 200;
+    color: white;
+    line-height: 52px;
+    text-align: center;
+    margin-left: 2px;
+    font-family: arial;
+}
+.pic1{
+    height: 52px;
+    width: 52px; 
+    background-image: url('strboy.jpg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sname{
+    font-weight: 500;
+    color: white;
+    line-height: 52px;
+    text-align: center;
+    margin-left: 7px; 
+    font-family: arial;
+}
+.rhs{
+    color: white;
+    line-height: 52px;
+    text-align: center;
+    margin-left: 40px;
+}
+.rhs1{
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    margin-left: 20px;
+}
+.rhs:hover{
+    cursor: pointer;
+    color: limegreen;
+}
+.pic2{
+    height: 52px;
+    width: 52px;
+    background-image: url('tmh.jpg');
+    background-position: center;cursor: pointer;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pic3{
+    height: 52px;cursor: pointer;
+    width: 52px;
+    background-image: url('attn.jpg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pic4{
+    height: 52px;
+    width: 52px;
+    background-image: url('baby.jpg');cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pic5{
+    height: 52px;
+    width: 52px;
+    background-image: url('hasi.jpg');cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pic6{
+    height: 52px;
+    width: 52px;
+    background-image: url('sn.jpg');cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.pic7{
+    height: 52px;
+    width: 52px;
+    background-image: url('dun.jpg');cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.pic8{
+    height: 52px;
+    width: 52px;
+    background-image: url('rn.jpg');cursor: pointer;
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.pic9{
+    height: 52px;cursor: pointer;
+    width: 52px;
+    background-image: url('stc.jpg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.pic10{
+    height: 52px;
+    width: 52px;
+    background-image: url('cc.jpg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.pic11{
+    height: 52px;
+    width: 52px;cursor: pointer;
+    background-image: url('lvly.jpg');
+    background-position: center;
+    background-size: contain;
+    margin-left: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.pic12{
+    height: 52px;
+    width: 52px;
+    background-image: url('stay.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+    margin-left: 6px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.lhs1{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 85px;
+    margin-top: 7px;
+    margin-left: 4px;
+}
+.sname1{
+    font-weight: 500;
+    color: white;
+    line-height: 85px;
+    text-align: center;
+    margin-left: 7px; 
+    font-family: arial;
+}
+.pie4{
+    height: 80px;
+    width: 80px;
+    background-image: url('stay.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pie1{
+    height: 80px;
+    width: 80px;
+    background-image: url('attn.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pie3{
+    height: 80px;
+    width: 80px;
+    background-image: url('cc.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.pie2{
+    height: 80px;
+    width: 80px;
+    background-image: url('lvly.jpg');
+    background-position: center;
+    background-size: contain;cursor: pointer;
+    margin-left: 6px;
+    border-radius: 5px;
+}
+.jt{
+    line-height: 50px;
+    text-align: center;
+    margin-left: -30px;
+    margin-right: 20px;
+}
+.jt:hover{
+    color: lawngreen;
+    cursor: pointer;
+}
+.rhs1:hover{
+    color: red;
+    cursor: pointer;
+}
+.audio{
+    width:30%;
+    margin-left: 35vw;
+    background-color: rgb(33, 33, 33);
+}
+audio::-webkit-media-controls-panel {
+    background-color: rgb(247, 247, 250);
+    border: 2px solid grey;
+}
+.as{
+    background-color: rgb(33, 33, 33);
+}
